@@ -2,7 +2,7 @@
 [ -z "${MYSQL_USER}" ] && { echo "=> MYSQL_USER cannot be empty" && exit 1; }
 [ -z "${MYSQL_PASS}" ] && { echo "=> MYSQL_PASS cannot be empty" && exit 1; }
 
-DATE=$(date +%Y%m%d%H%M)
+DATE=$(date +%Y%m%d)
 echo "=> Backup started at $DATE"
 
 if [ -n "$MAX_BACKUPS" ]

@@ -1,6 +1,8 @@
 Modifications:
 - Delete backup files before (not after) creating new backup
 
+For a docker-compose example see [ziezo/docker-server](https://github.com/ziezo/docker-server)
+
 # mysql-cron-backup
 
 This docker image runs mysqldump to backup your databases periodically using cron task manager. Backups are placed in `/backup` so you can mount your backup docker volume in this path.
